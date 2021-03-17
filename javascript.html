@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <script>
+            function geek()
+            {
+                var name=document.getElementByid("fname");
+                var address=document.getElementByid("address");
+                var sub=document.getElementByid("subject")
+                var radious =document.getElementByName("yesno")
+                var formvalid =false;
+                if(name.value==name.value==null)
+                window.alert("enter valid data")
+                return false;
+            }
+            if(sub.selectedindex==")
+            {
+                var i=0;
+                while(!formvalid&&i<radious.length){
+                    if(radious[i].checked)formvalid=true;
+                    i++;
+                }
+                if(!formvalid)alert("please enter your gender");
+            return true;}
+        </script>
+    </head>
+<body> 
+<form name="stud"onsubmit="return geek()" >
+    <h2>registration form</h2><br>
+    Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text"name="name"id="fnamme">
+    <br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    address <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <textarea name="address"type="text" rows="5" cols="20" id="address">
+        </textarea><br><br>
+        gender:<input type="radio"id="1"name="yesno"value="2"/>
+        female<br><br>
+        qualification:<select name="subject"id="subject"> 
+        <option value="s">MCA</option>
+        <option value="s">bca</option>
+        <option value="s">MBA</option>
+        <option value="s">BBA</option>
+        <option value="s">mtech</option>
+        <option value="s">btech</option>
+        </select><br><br>
+        <input type="submit"value="conform">
+        </form>
+        </body>
+        </html>
+        
+
+
+
